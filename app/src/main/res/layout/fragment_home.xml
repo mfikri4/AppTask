@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradient_tbg2"
+    tools:context=".view.HomeFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <include
+            android:id="@+id/custom_setting"
+            layout="@layout/custom_menu_home" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/materialCardView"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="75dp"-->
+<!--        android:layout_gravity="bottom|center_horizontal"-->
+<!--        android:layout_marginTop="-36dp"-->
+<!--        app:cardCornerRadius="16dp"-->
+<!--        app:cardElevation="16dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/container_custom">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:id="@+id/materialTextView2"-->
+<!--                style="@style/text_12sp_poppins"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:text="Tabunganku saat ini"-->
+<!--                android:textColor="@color/green_500"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:id="@+id/txt_rp"-->
+<!--                style="@style/text_22sp_roboto_bold"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="4dp"-->
+<!--                android:text="@string/txt_rp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/materialTextView2"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />-->
+
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:id="@+id/tv_total_tab"-->
+<!--                style="@style/text_22sp_roboto_bold"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/txt_dummy_total_tab"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/txt_rp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/txt_rp"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </com.google.android.material.card.MaterialCardView>-->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_data_pencairan"
+        style="@style/text_18sp_poppins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/txt_data_pencatatan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_custom" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_view_all"
+        style="@style/text_12sp_poppins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All"
+        android:textColor="@color/green_500"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_data_pencairan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_data_pencairan" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_data"
+        android:layout_width="380dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_data_pencairan"
+        tools:listitem="@layout/item_row"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

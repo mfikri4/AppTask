@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home"
+        android:title="@string/txt_home" />
+
+    <item
+        android:id="@+id/addDataFragment"
+        android:icon="@drawable/add"
+        android:title="@string/txt_add" />
+
+    <item
+        android:id="@+id/listDataFragment"
+        android:icon="@drawable/ic_catatan"
+        android:title="@string/txt_list" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile"
+        android:title="@string/txt_profile" />
+
+
+</menu>

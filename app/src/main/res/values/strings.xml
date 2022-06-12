@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">AppTask</string>
+    <string name="client_id">926804961700-uq286e92803r54t31hiu33o9gsi6joa5.apps.googleusercontent.com</string>
+    <string name="txt_tabungan_bold">TABUNGANKU</string>
+    <string name="txt_email">Email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="txt_password">Password</string>
+    <string name="txt_forgot_password">Forgot Password?</string>
+    <string name="txt_masuk">Masuk</string>
+    <string name="txt_atau">atau</string>
+    <string name="txt_belum_punya_akun">Belum punya akun ?</string>
+    <string name="txt_daftar_sekarang">Daftar Sekarang</string>
+    <string name="txt_sudah_punya_akun">Sudah punya akun?</string>
+    <string name="txt_send">Send</string>
+    <string name="txt_dummy_total_tab">200000</string>
+    <string name="txt_rp">Rp.</string>
+    <string name="txt_data_pencatatan">Data Pencatatan</string>
+    <string name="txt_dummy_date">9 Juni 2022</string>
+    <string name="txt_list_data_pencatatan">List Data Pencatatan</string>
+    <string name="txt_home">Home</string>
+    <string name="txt_add">Add</string>
+    <string name="txt_list">List</string>
+    <string name="txt_profile">Profile</string>
+    <string name="tv_date">Date</string>
+    <string name="txt_add_catatan">Tambah Catatan</string>
+    <string name="txt_keterangan">Keterangan</string>
+    <string name="txt_edit_catatan">Edit Catatan</string>
+    <string name="txt_nominal">Nominal</string>
+    <string name="txt_name_author">Muhammad Fikri Almajid</string>
+    <string name="txt_name">Name</string>
+    <string name="dummy_nomor">082136841556</string>
+    <string name="txt_nomor_hp">Nomor HP</string>
+    <string name="txt_tanggal_lahir">Tanggal Lahir</string>
+    <string name="dummy_tanggal">07 Februari 2022</string>
+    <string name="txt_alamat">Alamat</string>
+    <string name="dummy_alamat">Jaken, Pati, Jawa Tengah</string>
+    <string name="txt_keluar">Keluar</string>
+    <string name="txt_dana_masuk">Dana Masuk</string>
+    <string name="txt_detail_catatan">Detail Catatan</string>
+    <string name="txt_pemasukan_dana_tabungan">Pemasukan dana Tabungan</string>
+    <string name="txt_rpp">+Rp.</string>
+    <string name="txt_keterangann">Keterangan :</string>
+    <string name="txt_hapus_catatan">Hapus Catatan</string>
+</resources>

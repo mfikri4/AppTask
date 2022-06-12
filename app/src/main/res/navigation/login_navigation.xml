@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Login_navigation"
+    app:startDestination="@id/LoginFragment">
+        <fragment
+            android:id="@+id/RegisterFragment"
+            android:name="com.example.apptask.view.auth.RegisterFragment"
+            android:label="fragment_register"
+            tools:layout="@layout/fragment_register">
+            <action
+                android:id="@+id/action_registerFragment_to_loginFragment"
+                app:destination="@id/LoginFragment" />
+            <action
+                android:id="@+id/action_registerFragment_to_verificationFragment"
+                app:destination="@id/VerificationFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/LoginFragment"
+            android:name="com.example.apptask.view.auth.LoginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login">
+            <action
+                android:id="@+id/action_loginFragment_to_registerFragment"
+                app:destination="@id/RegisterFragment" />
+            <action
+                android:id="@+id/action_loginFragment_pop_including_registerFragment"
+                app:popUpTo="@id/RegisterFragment"
+                app:popUpToInclusive="true" />
+            <action
+                android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+                app:destination="@id/ForgotPasswordFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/ForgotPasswordFragment"
+            android:name="com.example.apptask.view.auth.ForgotPasswordFragment"
+            android:label="fragment_forgot_password"
+            tools:layout="@layout/fragment_forgot_password">
+            <action
+                android:id="@+id/action_forgotPasswordFragment_to_loginFragment"
+                app:destination="@id/LoginFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/VerificationFragment"
+            android:name="com.example.apptask.view.auth.VerificationFragment"
+            android:label="fragment_verification"
+            tools:layout="@layout/fragment_verification" />
+</navigation>

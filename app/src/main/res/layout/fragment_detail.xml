@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradient_tbg2"
+    tools:context=".view.DetailFragment">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        style="@style/text_20sp_roboto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="@string/txt_detail_catatan"
+        android:textColor="@color/green_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@+id/materialTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/materialTextView" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/green_300"
+        android:backgroundTint="@color/green_300"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_date"
+                style="@style/text_12sp_poppins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/dummy_tanggal"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_up"
+                app:layout_constraintStart_toStartOf="@+id/tv_date"
+                app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_buat_catatan"
+                style="@style/text_14sp_poppins"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/txt_pemasukan_dana_tabungan"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView3"
+                app:layout_constraintTop_toTopOf="@+id/shapeableImageView3" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_rp"
+                style="@style/text_14sp_poppins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/txt_rpp"
+                android:textColor="@color/green_700"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_rp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_rp"
+                app:layout_constraintTop_toTopOf="@+id/tv_rp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_rp"
+                style="@style/text_14sp_poppins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/txt_dummy_total_tab"
+                android:textColor="@color/green_700"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_buat_catatan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/shapeableImageView3"
+                app:layout_constraintVertical_bias="0.473" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_desc"
+                style="@style/text_12sp_poppins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/txt_keterangann"
+                android:layout_marginTop="8dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shapeableImageView3" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_desc"
+                style="@style/text_12sp_poppins"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/txt_pemasukan_dana_tabungan"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/txt_desc"
+                app:layout_constraintTop_toBottomOf="@+id/txt_desc" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

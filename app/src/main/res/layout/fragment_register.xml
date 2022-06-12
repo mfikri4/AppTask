@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/registerFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_tbg"
+    tools:context=".view.auth.RegisterFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_moneybag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/money2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_login"
+        style="@style/text_18sp_roboto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/txt_daftar_sekarang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_moneybag" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/container_email"
+        style="@style/BoxTheming"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="16dp"
+        android:hint="@string/txt_email"
+        app:boxStrokeColor="@color/black_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_login">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:backgroundTint="@color/grey"
+            android:inputType="text"
+            android:requiresFadingEdge="horizontal"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/container_password"
+        style="@style/BoxTheming"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:elevation="16dp"
+        android:hint="@string/txt_password"
+        app:boxStrokeColor="@color/black_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:backgroundTint="@color/grey"
+            android:inputType="text"
+            android:requiresFadingEdge="horizontal"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        style="@style/text_14sp_roboto"
+        android:text="@string/txt_forgot_password"
+        android:textColor="@color/secondaryDarkColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/container_password"
+        app:layout_constraintTop_toBottomOf="@+id/container_password"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_register"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="20dp"
+        android:padding="0dp"
+        android:stateListAnimator="@null"
+        android:text="@string/txt_daftar_sekarang"
+        app:backgroundTint="@color/green_500"
+        app:iconGravity="textStart"
+        app:iconSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_pass"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/atau"
+        style="@style/text_12sp_roboto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/txt_atau"
+        android:textColor="@color/secondaryDarkColor"
+        app:layout_constraintEnd_toEndOf="@+id/btn_register"
+        app:layout_constraintStart_toStartOf="@+id/btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atau" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtsudahpunya"
+        style="@style/text_12sp_roboto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="130dp"
+        android:focusable="true"
+        android:text="@string/txt_sudah_punya_akun"
+        android:textColor="@color/secondaryDarkColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_google"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_masukk"
+        style="@style/text_12sp_roboto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginStart="4dp"
+        android:text="@string/txt_masuk"
+        android:textColor="@color/blue_700"
+        app:layout_constraintBottom_toBottomOf="@+id/txtsudahpunya"
+        app:layout_constraintStart_toEndOf="@+id/txtsudahpunya"
+        app:layout_constraintTop_toTopOf="@+id/txtsudahpunya"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

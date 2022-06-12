@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_tabungan_bold">TABUNGANKU</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_masuk">Masuk</string>
+    <string name="txt_dummy_total_tab">200000</string>
+    <string name="txt_rp">Rp.</string>
+    <string name="txt_dummy_date">9 Juni 2022</string>
+    <string name="txt_list_data_pencatatan">List Data Pencatatan</string>
+    <string name="txt_add_catatan">Tambah Catatan</string>
+    <string name="txt_nominal">Nominal</string>
+    <string name="txt_name">Name</string>
+    <string name="dummy_nomor">082136841556</string>
+</resources>
